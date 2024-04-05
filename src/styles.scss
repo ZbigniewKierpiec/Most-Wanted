@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+button{
+  padding: .6rem 1rem;
+  font-size: 3rem;
+  font-family: monospace;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  outline-offset: .7rem;
+  outline-width: 1px;
+  outline-color: rgba(0, 0, 0, 0.074);
+  outline-style: solid;
+  border-radius: .3rem;
+}

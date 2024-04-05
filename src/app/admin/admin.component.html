@@ -1,0 +1,63 @@
+<div class="box">
+  <div class="form">
+    <div class="content">
+      <div class="name">
+        <input [(ngModel)]="name" type="text" placeholder="criminal Name" />
+      </div>
+      <div class="gender">
+        <select   [(ngModel)]="gender">
+          <option  value="male">male</option>
+          <option value="female">female</option>
+        </select>
+      </div>
+
+      <div class="name">
+        <input [(ngModel)]="date" type="date"  placeholder="date of birth" />
+      </div>
+
+      <div class="sub">
+        <select [(ngModel)]="sub">
+          <option value="committed a crime">committed a crime </option>
+
+          <option value="no committed a crime">no committed a crime</option>
+
+        </select>
+      </div>
+      <div class="name">
+        <!-- <select [(ngModel)]="active">
+          <option value="active">active</option>
+          <option value="no active">no active</option>
+        </select> -->
+        <input  [(ngModel)]="active"      placeholder="how many crimes" type="number" name="" id="">
+      </div>
+
+      <div class="name-two">
+        <label class="file">
+          <input type="file" id="file"   (change)="onFileSelected($event)"   >
+          <span class="file-custom"></span>
+        </label>
+
+      </div>
+
+
+      <button [disabled]="name==''" (click)="createNewUser()" class="create">report</button>
+    </div>
+  </div>
+
+  <ul class="list">
+
+    <li  (click)="crimeInfo(item)"       *ngFor="let item of Users">
+      <div class="image">
+        <img [src]="item.image" alt="">
+      </div>
+      <div class="liName">
+        <span>{{ item.name }}</span>
+      </div>
+      <div class="liData">
+        <div class="span">{{ item.gender }}</div>
+        <div class="span">{{ item.sub }}</div>
+        <div class="span">{{ item.active }}</div>
+      </div>
+    </li>
+  </ul>
+</div>

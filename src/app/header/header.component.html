@@ -1,0 +1,11 @@
+<header>
+  <nav>
+    <div class="logo">
+      <img src="https://www.thamesvalley.police.uk/SysSiteAssets/media/images/thames-valley/tvp_white_logo.png " alt="">
+    </div>
+    <div class="buttons">
+      <button [class.active]="type == 'home'"      (click)="nav('home')">home</button>
+      <button [class.active]="type == 'admin'"       (click)="nav('admin')">admin</button>
+    </div>
+  </nav>
+</header>

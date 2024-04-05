@@ -1,0 +1,78 @@
+.info{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width:70%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.567);
+  backdrop-filter: blur(9px);
+}
+header{
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-size: 1.3rem;
+  font-family: 'Oswald', sans-serif;
+}
+.image{
+  width: 17rem;
+  height: 7rem;
+ background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline-offset: 1rem;
+  outline-width: 1px;
+  outline-color: black;
+  outline-style: groove;
+  img{
+    width: 80%;
+    display: block;
+    object-fit: cover;
+  }
+}
+.wanted{
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Agency FB', sans-serif;
+  font-family: Stencil, sans-serif;
+}
+
+
+.close{
+  position: absolute;
+  right: 0;
+  width: 7rem;
+  height: 5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1{
+    font-size: 4rem;
+    color: white;
+  }
+}
+
+
+.active {
+  font-size:4rem;
+  font-weight: bold;
+  color: #333;
+  color: red;
+
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.3;
+  }
+}

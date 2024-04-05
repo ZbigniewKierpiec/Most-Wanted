@@ -1,0 +1,25 @@
+<div class="info">
+  <div (click)="close()" class="close">
+    <h1>&#10006;</h1>
+  </div>
+  <header>
+    <div class="image">
+      <img
+        src="https://www.nationalcrimeagency.gov.uk/images/NCA_logo.png"
+        alt=""
+      />
+    </div>
+    <h3>
+      Protecting the public <br />
+      from serious and organised crime
+    </h3>
+  </header>
+  <h1
+  [ngClass]="{'active': crimes! >= 7}"
+    class="wanted"
+  >
+   {{ crimes! >=7 ? 'most wanted':'wanted'}}
+  </h1>
+
+  <app-crime-card></app-crime-card>
+</div>

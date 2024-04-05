@@ -1,0 +1,6 @@
+<div class="box">
+  <app-header (navigation)="navigate($event)"></app-header>
+  <app-home *ngIf="nav == 'home'"></app-home>
+  <app-admin *ngIf="nav == 'admin'"></app-admin>
+
+</div>
